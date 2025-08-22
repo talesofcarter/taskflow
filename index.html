@@ -7,8 +7,12 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="styles/responsive/hero.css"
+    />
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
     <title>TaskFlow</title>
   </head>
   <body>
@@ -26,6 +30,40 @@
         </section>
       </nav>
     </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>
+              Organize Your Tasks Efficiently with
+              <span style="color: var(--theme-green)"
+                >TaskFlow</span
+              >
+            </h2>
+            <p>
+              Streamline your workflow and boost
+              productivity with our intuitive task
+              management app.
+            </p>
+            <div class="hero-cta">
+              <button class="btn btn-primary">
+                Get Started
+              </button>
+              <button class="btn btn-secondary">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <img
+              class="hero-img"
+              src="assets/images/hero-img.png"
+              alt="TaskFlow Hero Image"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="scripts/app.js"></script>
   </body>
 </html>
