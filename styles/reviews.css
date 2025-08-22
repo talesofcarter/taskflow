@@ -1,0 +1,69 @@
+.reviews-section {
+  padding: 1.25rem 2rem;
+  min-height: 100vh;
+}
+
+.reviews-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(450px, 1fr)
+  );
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.review-card {
+  background: #ecebfd;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.portrait-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 2.56rem;
+}
+
+.name-occupation p {
+  text-align: left;
+}
+
+.name {
+  color: #0a0a10;
+  font-size: 1.313rem;
+}
+
+.occupation {
+  color: #6c6c6c;
+  font-size: 1.125rem;
+}
+
+.review-text p {
+  color: #0a0a10;
+  text-align: left;
+  font-size: 1.125rem;
+  line-height: 1.969rem;
+  margin-bottom: 2rem;
+}
+
+.ratings {
+  display: flex;
+}
+
+.ratings img {
+  width: 25px;
+}

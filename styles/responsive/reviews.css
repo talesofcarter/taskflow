@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .reviews-section {
+    padding: 2rem 1rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-card {
+    padding: 1.5rem;
+  }
+}
