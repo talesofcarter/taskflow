@@ -11,8 +11,13 @@
       rel="stylesheet"
       href="styles/responsive/hero.css"
     />
+    <link
+      rel="stylesheet"
+      href="styles/responsive/features.css"
+    />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/features.css" />
     <title>TaskFlow</title>
   </head>
   <body>
@@ -63,7 +68,28 @@
           </div>
         </div>
       </section>
+
+      <section class="features-section">
+        <div class="features-content">
+          <div class="heading">
+            <h2>
+              Core
+              <span style="color: var(--theme-green)"
+                >Features</span
+              >
+            </h2>
+            <p>
+              Discover the essential tools and
+              functionalities designed to optimize your task
+              management, boost productivity, and enhance
+              over project efficiency .
+            </p>
+          </div>
+
+          <div class="features-grid js-features-grid"></div>
+        </div>
+      </section>
     </main>
-    <script src="scripts/app.js"></script>
+    <script type="module" src="scripts/app.js"></script>
   </body>
 </html>
