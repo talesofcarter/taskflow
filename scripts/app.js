@@ -87,9 +87,13 @@ function generatePricing() {
 
     const priceText =
       entry.price === 0 ? "$0" : `$${entry.price}`;
+    const cardCard =
+      entry.category === "Standard"
+        ? "pricing-card standard-plan"
+        : "pricing-card";
 
     pricingRender += `
-    <div class="pricing-card">
+    <div class="${cardCard}">
       <div class="pricing-label">
         <h1 class="">${entry.category}</h1>
         <p>${entry.audience}</p>

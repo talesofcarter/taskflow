@@ -27,6 +27,14 @@
   box-shadow: #efecf480 0px opx 10px 5px;
 }
 
+.pricing-card.standard-plan {
+  background: #8affc2;
+}
+
+.pricing-card:hover {
+  background: hsl(149, 100%, 77%);
+}
+
 .pricing-label h1 {
   font-size: 2.375rem;
   color: #0a0a10;

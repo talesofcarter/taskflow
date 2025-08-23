@@ -36,9 +36,9 @@ export const pricing = [
       "Premium Smart Scheduling",
       "Advanced Team Collaboration",
       "Multi-Channel Reminder",
-      "Comprehensive Analytics Dashboard",
+      "Elite Analytics Dashboard",
       "100MB File Storage per Task file",
-      "API Accessated API for seamless workflows",
+      "Two-Factor Authentication",
     ],
   },
 ];
