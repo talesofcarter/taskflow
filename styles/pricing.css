@@ -29,6 +29,21 @@
 
 .pricing-card.standard-plan {
   background: #8affc2;
+  border: 2px solid var(--theme-green);
+  position: relative;
+}
+
+.pricing-card.standard-plan::before {
+  content: "Most Popular";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--theme-green);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .pricing-card:hover {
