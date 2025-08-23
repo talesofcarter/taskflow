@@ -24,7 +24,7 @@ export const pricing = [
       "Custom Reminder Notifications",
       "Enhanced Analytics Dashboard",
       "25MB File Storage per Task",
-      "Task Templatesing workflows",
+      "Workflow Automation",
     ],
   },
   {

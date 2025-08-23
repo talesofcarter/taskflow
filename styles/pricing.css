@@ -1,4 +1,5 @@
 .pricing-section {
+  padding: 1.25rem 2rem;
   min-height: 150vh;
   background-color: #f3fdf7;
 }
@@ -23,10 +24,17 @@
   text-align: start;
   background: white;
   padding: 20px 30px 40px;
+  border: 1px solid #a3a2a3;
   border-radius: 20px;
   box-shadow: #efecf480 0px opx 10px 5px;
+  transition: all 0.3s ease-in-out;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background: #a3a2a3;
+}
 .pricing-card.standard-plan {
   background: #8affc2;
   border: 2px solid var(--theme-green);
@@ -48,6 +56,10 @@
 
 .pricing-card:hover {
   background: hsl(149, 100%, 77%);
+}
+
+.pricing-card:hover .item-perk {
+  color: #0a0a10;
 }
 
 .pricing-label h1 {
@@ -88,6 +100,7 @@
 .item-perk {
   color: #6c6c6c;
   font-size: 1.125rem;
+  transition: color 0.3s ease-in-out;
 }
 
 .purchase-btn {
@@ -97,8 +110,14 @@
   font-weight: 500;
   margin-top: 1rem;
   background: white;
-  border: 1px solid;
+  border: 1px solid black;
   padding: 12px 0;
   color: #0a0a10;
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.purchase-btn:hover {
+  background: #0a0a10;
+  color: white;
 }
