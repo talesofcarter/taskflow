@@ -1,11 +1,24 @@
 import { features } from "./features.js";
 import { reviews } from "./reviews.js";
+import { pricing } from "./pricing.js";
 
 let featuresRender = "";
 let reviewRender = "";
+let pricingRender = "";
 
-features.forEach((feature) => {
-  featuresRender += `
+const featuresContainer = document.querySelector(
+  ".js-features-grid"
+);
+const reviewsContainer = document.querySelector(
+  ".js-reviews-grid"
+);
+const pricingContainer = document.querySelector(
+  ".js-pricing-grid"
+);
+
+function generateFeatures() {
+  features.forEach((feature) => {
+    featuresRender += `
     <div class="features-grid">
         <div class="feature-card">
             <img src=${feature.icon} alt="" />
@@ -14,10 +27,14 @@ features.forEach((feature) => {
         </div>
     </div>
     `;
-});
+  });
 
-reviews.forEach((review) => {
-  reviewRender += `
+  featuresContainer.innerHTML = featuresRender;
+}
+
+function generateReviews() {
+  reviews.forEach((review) => {
+    reviewRender += `
   <div class="reviews-grid js-reviews-grid">
     <div class="review-card">
       <div class="portrait-section">
@@ -47,10 +64,53 @@ reviews.forEach((review) => {
     </div>
   </div>
   `;
-});
+  });
+  reviewsContainer.innerHTML = reviewRender;
+}
 
-document.querySelector(".js-features-grid").innerHTML =
-  featuresRender;
+function generatePricing() {
+  pricing.forEach((entry) => {
+    const perksHTML = entry.perks
+      .map(
+        (perk) => `
+      <div class="perk-micro-container">
+        <img
+          src="assets/icons/check-mark.svg"
+          alt=""
+        />
+        <span class="item-perk"
+          >${perk}
+        </span>
+      </div>`
+      )
+      .join("");
 
-document.querySelector(".js-reviews-grid").innerHTML =
-  reviewRender;
+    const priceText =
+      entry.price === 0 ? "$0" : `$${entry.price}`;
+
+    pricingRender += `
+    <div class="pricing-card">
+      <div class="pricing-label">
+        <h1 class="">${entry.category}</h1>
+        <p>${entry.audience}</p>
+      </div>
+      <hr />
+      <div class="pricing-perks">
+        <div class="price-value-section">
+          <span class="price">${priceText}</span>
+          <span class="per-month">/ month</span>
+        </div>
+        <div>
+        ${perksHTML}
+        </div>
+      </div>
+      <button class="purchase-btn">Purchase</button>
+    </div>
+      `;
+  });
+  pricingContainer.innerHTML = pricingRender;
+}
+
+generateFeatures();
+generateReviews();
+generatePricing();
