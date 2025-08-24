@@ -105,24 +105,26 @@
       </section>
 
       <!--====== Features ======-->
-      <section class="features-section">
+      <section
+        class="features-section"
+        aria-labelledby="features-heading"
+      >
         <div class="features-content">
-          <div class="heading hidden">
-            <h2>
-              Core
-              <span style="color: var(--theme-green)"
-                >Features</span
-              >
+          <header class="heading hidden">
+            <h2 id="features-heading">
+              Core <span class="highlight">Features</span>
             </h2>
             <p>
               Discover the essential tools and
               functionalities designed to optimize your task
               management, boost productivity, and enhance
-              over project efficiency .
+              overall project efficiency.
             </p>
-          </div>
-
-          <div class="features-grid js-features-grid"></div>
+          </header>
+          <div
+            class="features-grid js-features-grid"
+            role="list"
+          ></div>
         </div>
       </section>
 

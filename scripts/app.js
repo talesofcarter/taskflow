@@ -21,7 +21,11 @@ function generateFeatures() {
     featuresRender += `
     <div class="features-grid">
         <div class="feature-card js-feature-card">
-            <img src=${feature.icon} alt="" />
+            <img 
+              src=${feature.icon} 
+              alt="${feature.title} icon"
+              loading="lazy"
+            />
             <h3>${feature.title}</h3>
             <p>${feature.description}</p>
         </div>
