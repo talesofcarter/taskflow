@@ -1,28 +1,29 @@
 .reviews-section {
   padding: 2rem 1.5rem;
-  background: #fff;
+  background: #ffffff;
 }
 
 .reviews-content {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  text-align: center;
+  text-align: start;
 }
 
-.reviews-content .heading h2 {
+.reviews-content header h2 {
   font-size: 2.5rem;
   font-weight: 700;
+  color: var(--text-dark, #0a0a10);
   margin-bottom: 1rem;
 }
 
-.reviews-content .heading h2 span {
+.reviews-content header .highlight {
   color: var(--theme-green);
 }
 
-.reviews-content .heading p {
+.reviews-content header p {
   font-size: 1.125rem;
-  color: #666;
+  color: var(--text-muted, #666666);
   max-width: 600px;
   margin: 0 auto 2rem;
 }
@@ -31,17 +32,24 @@
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(400px, 1fr)
+    minmax(350px, 1fr)
   );
   gap: 2rem;
   padding: 0 1rem;
 }
 
 .review-card {
-  background: #ecebfd;
+  background: var(--card-bg, #ecebfd);
   border-radius: 1rem;
   padding: 1.5rem;
-  box-shadow: 0 2px 8px #0000001a;
+  box-shadow: 0 2px 8px var(--shadow-color, #0000001a);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover,
+.review-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px var(--shadow-color, #00000026);
 }
 
 .avatar {
@@ -58,26 +66,25 @@
   margin-bottom: 1.5rem;
 }
 
-.name-occupation p {
+.name-occupation {
   text-align: left;
 }
 
 .name {
-  color: #0a0a10;
+  color: var(--text-dark, #0a0a10);
   font-size: 1.313rem;
   font-weight: 600;
 }
 
 .occupation {
-  color: #6c6c6c;
+  color: var(--text-muted, #6c6c6c);
   font-size: 1.125rem;
 }
 
 .review-text p {
-  color: #0a0a10;
-  text-align: left;
+  color: var(--text-dark, #0a0a10);
   font-size: 1.125rem;
-  line-height: 1.969rem;
+  line-height: 1.75;
   margin-bottom: 1.5rem;
 }
 
@@ -89,4 +96,21 @@
 .ratings img {
   width: 25px;
   height: 25px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .review-text p {
+    animation: fadeInUp 0.5s ease-out;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

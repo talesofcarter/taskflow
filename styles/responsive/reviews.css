@@ -1,14 +1,11 @@
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .reviews-section {
     padding: 1.5rem 1rem;
   }
 
   .reviews-grid {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(300px, 1fr)
-    );
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
     padding: 0 0.5rem;
   }
 
@@ -16,13 +13,13 @@
     padding: 1.25rem;
   }
 
-  .reviews-content .heading h2 {
-    font-size: 2rem;
+  .reviews-content header h2 {
+    font-size: clamp(1.5rem, 5vw, 1.75rem);
   }
 
-  .reviews-content .heading p {
-    font-size: 1rem;
-    max-width: 500px;
+  .reviews-content header p {
+    font-size: clamp(0.875rem, 4vw, 0.9375rem);
+    max-width: 90%;
   }
 
   .avatar {
@@ -36,16 +33,16 @@
   }
 
   .name {
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 4vw, 1.125rem);
   }
 
   .occupation {
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 3.5vw, 0.9375rem);
   }
 
   .review-text p {
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-size: clamp(0.875rem, 3.5vw, 0.9375rem);
+    line-height: 1.5;
     margin-bottom: 1.25rem;
   }
 
@@ -55,65 +52,69 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 601px) and (max-width: 900px) {
+  .reviews-section {
+    padding: 1.75rem 1.25rem;
+  }
+
   .reviews-grid {
     grid-template-columns: repeat(
       auto-fit,
-      minmax(60%, 1fr)
+      minmax(300px, 1fr)
     );
-    gap: 1.25rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .reviews-section {
-    padding: 1rem 0.5rem;
-  }
-
-  .reviews-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .review-card {
-    padding: 1rem;
+    padding: 1.25rem;
   }
 
-  .reviews-content .heading h2 {
-    font-size: 1.5rem;
+  .reviews-content header h2 {
+    font-size: clamp(1.75rem, 5vw, 2rem);
   }
 
-  .reviews-content .heading p {
-    font-size: 0.875rem;
-    max-width: 90%;
+  .reviews-content header p {
+    font-size: clamp(0.9375rem, 4vw, 1rem);
+    max-width: 80%;
   }
 
   .avatar {
-    width: 40px;
-    height: 40px;
-  }
-
-  .portrait-section {
-    gap: 0.75rem;
-    margin-bottom: 1rem;
+    width: 56px;
+    height: 56px;
   }
 
   .name {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .occupation {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .review-text p {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 901px) {
+  .reviews-section {
+    padding: 2rem 2rem;
   }
 
-  .ratings img {
-    width: 18px;
-    height: 18px;
+  .reviews-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(350px, 1fr)
+    );
+    gap: 2rem;
+  }
+
+  .reviews-content header h2 {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+  }
+
+  .reviews-content header p {
+    font-size: clamp(1rem, 2vw, 1.125rem);
   }
 }

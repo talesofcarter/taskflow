@@ -33,37 +33,37 @@ function generateFeatures() {
 }
 
 function generateReviews() {
+  const defaultStarCount = 4;
   reviews.forEach((review) => {
+    const starImages = Array(defaultStarCount)
+      .fill()
+      .map(
+        () =>
+          `<img src="${review.star}" alt="Star" loading="lazy" />`
+      )
+      .join("");
     reviewRender += `
-  <div class="reviews-grid js-reviews-grid">
-    <div class="review-card">
-      <div class="portrait-section">
-        <img
-          class="avatar"
-          src=${review.portrait}
-          alt=""
-        />
-        <div class="name-occupation">
-          <p class="name">${review.person}</p>
-          <p class="occupation">
-            ${review.title}
-          </p>
+      <div class="review-card" role="listitem">
+        <div class="portrait-section">
+          <img
+            class="avatar"
+            src="${review.portrait}"
+            alt="Portrait of ${review.person}"
+            loading="lazy"
+          />
+          <div class="name-occupation">
+            <p class="name">${review.person}</p>
+            <p class="occupation">${review.title}</p>
+          </div>
+        </div>
+        <div class="review-text">
+          <p>${review.feedback}</p>
+        </div>
+        <div class="ratings" aria-label="Rating: 4 out of 5 stars">
+          ${starImages}
         </div>
       </div>
-      <div class="review-text">
-        <p class="reveal-type">
-          ${review.feedback}
-        </p>
-      </div>
-      <div class="ratings">
-        <img src="assets/icons/star.svg" alt="" />
-        <img src="assets/icons/star.svg" alt="" />
-        <img src="assets/icons/star.svg" alt="" />
-        <img src="assets/icons/star.svg" alt="" />
-      </div>
-    </div>
-  </div>
-  `;
+    `;
   });
   reviewsContainer.innerHTML = reviewRender;
 }
@@ -115,6 +115,8 @@ function generatePricing() {
   pricingContainer.innerHTML = pricingRender;
 }
 
-generateFeatures();
-generateReviews();
-generatePricing();
+document.addEventListener("DOMContentLoaded", () => {
+  generateFeatures();
+  generateReviews();
+  generatePricing();
+});
