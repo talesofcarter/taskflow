@@ -127,23 +127,26 @@
       </section>
 
       <!--====== Reviews  ======-->
-      <section class="reviews-section">
+      <section
+        class="reviews-section"
+        aria-labelledby="reviews-heading"
+      >
         <div class="reviews-content">
-          <div class="heading hidden">
-            <h2>
+          <header class="heading hidden">
+            <h2 id="reviews-heading">
               Customer
-              <span style="color: var(--theme-green)"
-                >Reviews</span
-              >
+              <span class="highlight">Reviews</span>
             </h2>
             <p>
               See how professionals from different fields
               are transforming their work with our task
               management app.
             </p>
-          </div>
-
-          <div class="reviews-grid js-reviews-grid"></div>
+          </header>
+          <div
+            class="reviews-grid js-reviews-grid"
+            role="list"
+          ></div>
         </div>
       </section>
 
