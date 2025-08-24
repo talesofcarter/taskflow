@@ -1,67 +1,15 @@
-h1 {
-  font-size: 2rem;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.navbar h1 {
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
-header {
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1.25rem 6.25rem;
-}
-
-nav section {
-  display: flex;
-  align-items: center;
-  gap: 3.125rem;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 3.125rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 1.125rem;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-  color: var(--primary-color);
-}
-
-nav h1 span {
+.navbar h1 span {
   color: var(--theme-green);
   margin-right: 5px;
-}
-
-nav button {
-  background-color: transparent;
-  font-family: "Outfit", sans-serif;
-  font-size: 1.125rem;
-  padding: 0.625rem 1.25rem;
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
-  border-radius: 15px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-nav button:hover {
-  background-color: var(--primary-color);
-  color: white;
-  border: 1px solid var(--primary-color);
 }

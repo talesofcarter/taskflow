@@ -1,0 +1,31 @@
+@media (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    display: none; /* Hide SignUp button */
+  }
+
+  nav .fa-bars {
+    display: block; /* Show hamburger icon */
+  }
+
+  nav {
+    padding: 1rem 2rem; /* Reduce padding for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 0.75rem 1rem; /* Further reduce padding for mobile */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller logo text */
+  }
+
+  nav .fa-bars {
+    font-size: 1.25rem; /* Smaller hamburger icon */
+  }
+}
