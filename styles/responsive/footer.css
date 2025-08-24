@@ -25,6 +25,11 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -34,5 +39,23 @@
 
   .footer-content {
     margin-top: 2rem;
+  }
+
+  .footer-widget h1 {
+    font-size: 1.25rem;
+  }
+
+  .quick-links h2,
+  .help-center h2,
+  .contact-info h2 {
+    font-size: 1.1rem;
+  }
+
+  .social-media-links i {
+    font-size: 1.2rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
   }
 }

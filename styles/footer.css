@@ -1,5 +1,4 @@
 footer {
-  height: 100vh;
   padding: 1.25rem 2rem;
 }
 
@@ -75,4 +74,42 @@ footer {
 .contact-info li:hover {
   color: var(--theme-green);
   cursor: pointer;
+}
+
+.footer-divider {
+  max-width: 1200px;
+  margin: 4rem auto;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media-links i {
+  font-size: 1.5rem;
+  color: #6c6c6c;
+  transition: color 0.3s ease;
+}
+
+.social-media-links i:hover {
+  color: var(--theme-green);
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: 1.125rem;
+  color: #6c6c6c;
 }
