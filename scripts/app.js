@@ -2,7 +2,6 @@ import { features } from "./features.js";
 import { reviews } from "./reviews.js";
 import { pricing } from "./pricing.js";
 import { logos } from "./logos.js";
-console.log(logos);
 
 let featuresRender = "";
 let reviewRender = "";
