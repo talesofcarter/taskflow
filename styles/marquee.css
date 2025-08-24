@@ -1,24 +1,31 @@
 .marquee-sub-section {
-  height: 50vh;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: #fff;
 }
 
 .marquee-header {
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 7rem;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
   width: 90%;
-  max-width: 1536px;
+  max-width: 1200px;
 }
 
 .marquee-header h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
   white-space: nowrap;
+  text-align: center;
+}
+
+.marquee-header h2 span {
+  color: var(--theme-green);
 }
 
 .line {
@@ -35,7 +42,7 @@
 
 .wrapper {
   width: 90%;
-  max-width: 1536px;
+  max-width: 1200px;
   margin-inline: auto;
   height: 100px;
   overflow: hidden;
@@ -44,7 +51,7 @@
 
 .marquee-content {
   display: flex;
-  gap: 30px;
+  gap: 2rem;
   animation: scrollLeft 20s linear infinite;
   will-change: transform;
 }
@@ -57,12 +64,13 @@
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-50%);
   }
 }
 
 .item {
-  flex: 0 0 120px;
+  flex: 0 0 100px;
+  height: 60px;
+  object-fit: contain;
 }

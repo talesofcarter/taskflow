@@ -1,19 +1,37 @@
 .reviews-section {
-  padding: 1.25rem 2rem;
-  min-height: 100vh;
+  padding: 2rem 1.5rem;
+  background: #fff;
 }
 
 .reviews-content {
   max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
   text-align: center;
+}
+
+.reviews-content .heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.reviews-content .heading h2 span {
+  color: var(--theme-green);
+}
+
+.reviews-content .heading p {
+  font-size: 1.125rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 2rem;
 }
 
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(450px, 1fr)
+    minmax(400px, 1fr)
   );
   gap: 2rem;
   padding: 0 1rem;
@@ -22,20 +40,22 @@
 .review-card {
   background: #ecebfd;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px #0000001a;
 }
 
 .avatar {
   width: 64px;
   height: 64px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .portrait-section {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
-  margin-bottom: 2.56rem;
+  margin-bottom: 1.5rem;
 }
 
 .name-occupation p {
@@ -45,6 +65,7 @@
 .name {
   color: #0a0a10;
   font-size: 1.313rem;
+  font-weight: 600;
 }
 
 .occupation {
@@ -57,13 +78,15 @@
   text-align: left;
   font-size: 1.125rem;
   line-height: 1.969rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .ratings {
   display: flex;
+  gap: 0.5rem;
 }
 
 .ratings img {
   width: 25px;
+  height: 25px;
 }
