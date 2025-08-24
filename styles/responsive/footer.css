@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-widget,
+  .quick-links,
+  .help-center,
+  .contact-info {
+    max-width: 100%;
+    min-width: unset;
+    text-align: center;
+  }
+
+  .footer-widget p {
+    text-align: center;
+  }
+
+  .quick-links ul,
+  .help-center ul,
+  .contact-info ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 1rem;
+  }
+
+  .footer-content {
+    margin-top: 2rem;
+  }
+}
