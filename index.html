@@ -32,6 +32,10 @@
     />
     <link
       rel="stylesheet"
+      href="styles/responsive/pricing.css"
+    />
+    <link
+      rel="stylesheet"
       href="styles/responsive/footer.css"
     />
 
@@ -176,24 +180,26 @@
         </div>
       </section>
 
-      <section class="pricing-section">
+      <section
+        class="pricing-section"
+        aria-labelledby="pricing-heading"
+      >
         <div class="pricing-content">
-          <div class="heading hidden">
-            <h2>
+          <header class="heading">
+            <h2 id="pricing-heading">
               Affordable
-              <span style="color: var(--theme-green)"
-                >Pricing</span
-              >
-              Options
+              <span class="highlight">Pricing</span> Options
             </h2>
             <p>
               Choose a plan that fits your needs. Our
               pricing is simple, transparent, and designed
               to give you the best value.
             </p>
-          </div>
-
-          <div class="pricing-grid js-pricing-grid"></div>
+          </header>
+          <div
+            class="pricing-grid js-pricing-grid"
+            role="list"
+          ></div>
         </div>
       </section>
     </main>
