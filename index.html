@@ -66,25 +66,29 @@
     <!--===== Main content =====-->
     <main>
       <!--====== Hero ======-->
-      <section class="hero">
+      <section class="hero" aria-labelledby="hero-heading">
         <div class="hero-content">
           <div class="hero-text">
-            <h2>
+            <h1 id="hero-heading">
               Organize Your Tasks Efficiently with
-              <span style="color: var(--theme-green)"
-                >TaskFlow</span
-              >
-            </h2>
+              <span class="highlight">TaskFlow</span>
+            </h1>
             <p>
               Streamline your workflow and boost
               productivity with our intuitive task
               management app.
             </p>
             <div class="hero-cta">
-              <button class="btn btn-primary">
+              <button
+                class="btn btn-primary"
+                aria-label="Get Started with TaskFlow"
+              >
                 Get Started
               </button>
-              <button class="btn btn-secondary">
+              <button
+                class="btn btn-secondary"
+                aria-label="Learn More about TaskFlow"
+              >
                 Learn More
               </button>
             </div>
@@ -93,7 +97,8 @@
             <img
               class="hero-img"
               src="assets/images/hero-img.png"
-              alt="TaskFlow Hero Image"
+              alt="Illustration of TaskFlow task management interface"
+              loading="lazy"
             />
           </div>
         </div>
