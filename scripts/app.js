@@ -101,7 +101,8 @@ function generatePricing() {
       <div class="perk-micro-container">
         <img
           src="assets/icons/check-mark.svg"
-          alt=""
+          alt="Checkmark"
+          loading="lazy"
         />
         <span class="item-perk"
           >${perk}
@@ -133,7 +134,7 @@ function generatePricing() {
         ${perksHTML}
         </div>
       </div>
-      <button class="purchase-btn">Purchase</button>
+      <button class="purchase-btn" aria-label="Purchase ${entry.category} Plan">Purchase</button>
     </div>
       `;
   });
