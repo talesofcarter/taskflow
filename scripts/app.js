@@ -1,16 +1,23 @@
 import { features } from "./features.js";
 import { reviews } from "./reviews.js";
 import { pricing } from "./pricing.js";
+import { logos } from "./logos.js";
+console.log(logos);
 
 let featuresRender = "";
 let reviewRender = "";
 let pricingRender = "";
+let marqueeRender = "";
 
 const featuresContainer = document.querySelector(
   ".js-features-grid"
 );
 const reviewsContainer = document.querySelector(
   ".js-reviews-grid"
+);
+
+const marqueeContainer = document.querySelector(
+  ".js-marquee-content"
 );
 const pricingContainer = document.querySelector(
   ".js-pricing-grid"
@@ -72,6 +79,20 @@ function generateReviews() {
   reviewsContainer.innerHTML = reviewRender;
 }
 
+function generateMarquees() {
+  logos.concat(logos).forEach((logo) => {
+    marqueeRender += `
+    <img
+      src="${logo.src}"
+      alt="${logo.alt}"
+      class="item"
+      loading="lazy"
+    />
+    `;
+  });
+  marqueeContainer.innerHTML = marqueeRender;
+}
+
 function generatePricing() {
   pricing.forEach((entry) => {
     const perksHTML = entry.perks
@@ -123,4 +144,5 @@ document.addEventListener("DOMContentLoaded", () => {
   generateFeatures();
   generateReviews();
   generatePricing();
+  generateMarquees();
 });
