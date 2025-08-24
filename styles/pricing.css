@@ -111,6 +111,7 @@ hr {
   margin-top: 1rem;
   background: white;
   border: 1px solid black;
+  border-radius: 15px;
   padding: 12px 0;
   color: #0a0a10;
   cursor: pointer;

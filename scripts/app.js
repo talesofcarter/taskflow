@@ -20,7 +20,7 @@ function generateFeatures() {
   features.forEach((feature) => {
     featuresRender += `
     <div class="features-grid">
-        <div class="feature-card">
+        <div class="feature-card js-feature-card">
             <img src=${feature.icon} alt="" />
             <h3>${feature.title}</h3>
             <p>${feature.description}</p>
@@ -51,7 +51,7 @@ function generateReviews() {
         </div>
       </div>
       <div class="review-text">
-        <p>
+        <p class="reveal-type">
           ${review.feedback}
         </p>
       </div>

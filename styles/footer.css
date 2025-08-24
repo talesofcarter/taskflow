@@ -1,3 +1,78 @@
 footer {
-  height: 50vh;
+  height: 100vh;
+  padding: 1.25rem 2rem;
+}
+
+.footer-content {
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.links-section {
+  flex: 2 1 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-widget {
+  flex: 1 1 300px;
+  max-width: 400px;
+  min-width: 250px;
+}
+
+.quick-links,
+.help-center,
+.contact-info {
+  flex: 1 1 150px;
+  min-width: 150px;
+}
+
+.footer-widget p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #6c6c6c;
+  word-wrap: break-word;
+}
+
+.footer-widget h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.footer-widget h1 span {
+  color: var(--theme-green);
+  margin-right: 5px;
+}
+
+.quick-links h2,
+.help-center h2,
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+
+.quick-links li,
+.help-center li,
+.contact-info li {
+  list-style: none;
+  font-size: 1.125rem;
+  color: #6c6c6c;
+  margin-bottom: 0.5rem;
+  transition: color 0.5s ease;
+}
+
+.quick-links li:hover,
+.help-center li:hover,
+.contact-info li:hover {
+  color: var(--theme-green);
+  cursor: pointer;
 }

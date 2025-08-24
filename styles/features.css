@@ -46,6 +46,12 @@
   background: #444444;
   border-radius: 1rem;
   padding: 2rem;
+  opacity: 0;
+  transition: 600ms ease;
+}
+
+.feature-card .reveal {
+  opacity: 1;
 }
 
 .feature-icon {
