@@ -7,7 +7,7 @@
     grid-template-columns: repeat(
       auto-fit,
       minmax(300px, 1fr)
-    ); /* Smaller columns for tablets */
+    );
     gap: 1.5rem;
     padding: 0 0.5rem;
   }
@@ -55,13 +55,23 @@
   }
 }
 
+@media (max-width: 600px) {
+  .reviews-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(80%, 1fr)
+    );
+    gap: 1.25rem;
+  }
+}
+
 @media (max-width: 480px) {
   .reviews-section {
     padding: 1rem 0.5rem;
   }
 
   .reviews-grid {
-    grid-template-columns: 1fr; /* Single column for mobile */
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
