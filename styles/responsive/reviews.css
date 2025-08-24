@@ -59,7 +59,7 @@
   .reviews-grid {
     grid-template-columns: repeat(
       auto-fit,
-      minmax(80%, 1fr)
+      minmax(60%, 1fr)
     );
     gap: 1.25rem;
   }
