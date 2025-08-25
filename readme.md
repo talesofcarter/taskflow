@@ -35,9 +35,9 @@ TaskFlow includes the following sections and functionalities:
 
 To run TaskFlow locally, ensure you have the following:
 
-1. A local server (e.g., Live Server for VS Code).\*\*
+1. A local server (e.g., Live Server for VS Code).
 2. Font Awesome for social media icons in the footer accessible via CDN.
-3. Basic knowledge of HTML, CSS, and JavaScript for customization.\*\*
+3. Basic knowledge of HTML, CSS, and JavaScript for customization.
 
 ## Installation
 
@@ -77,11 +77,11 @@ TaskFlow incorporates accessibility best practices:
 
 2. ARIA attributes (aria-label, aria-labelledby, role) for screen reader support.
 
-3. Descriptive alt text for images (e.g., portraits, logos, checkmarks).aria-hidden="true" for decorative icons (e.g., social media).\*\*
+3. Descriptive alt text for images (e.g., portraits, logos, checkmarks).aria-hidden="true" for decorative icons (e.g., social media).
 
-4. High-contrast colors and hover/focus states for interactive elements.\*\*
+4. High-contrast colors and hover/focus states for interactive elements.
 
-5. Respects prefers-reduced-motion for animations and transitions.\*\*
+5. Respects prefers-reduced-motion for animations and transitions.
 
 ## Contributing
 
@@ -109,4 +109,4 @@ For support or inquiries:
 
 - Phone: +254 721869757
 
-- Social Media: Connect with us on YouTube, Facebook, GitHub, Instagram.\*\*fin
+- Social Media: Connect with us on YouTube, Facebook, GitHub, Instagram.
