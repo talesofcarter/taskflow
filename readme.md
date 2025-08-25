@@ -36,7 +36,7 @@ TaskFlow includes the following sections and functionalities:
 To run TaskFlow locally, ensure you have the following:
 
 1. A local server (e.g., Live Server for VS Code).\*\*
-2. Font Awesome for social media icons in the footer (include via CDN: <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>).
+2. Font Awesome for social media icons in the footer accessible via CDN.
 3. Basic knowledge of HTML, CSS, and JavaScript for customization.\*\*
 
 ## Installation
@@ -105,8 +105,8 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 For support or inquiries:
 
-**Email: kelvinjuma99@gmail.com**
+- Email: kelvinjuma99@gmail.com
 
-**Phone: +254 721869757**
+- Phone: +254 721869757
 
-**Social Media: Connect with us on YouTube, Facebook, GitHub, Instagram.**
+- Social Media: Connect with us on YouTube, Facebook, GitHub, Instagram.\*\*fin
