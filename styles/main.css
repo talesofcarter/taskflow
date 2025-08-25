@@ -7,6 +7,10 @@
   --light-green: #5cffab;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
