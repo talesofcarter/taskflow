@@ -41,11 +41,50 @@
   color: var(--text-muted, #6c6c6c);
 }
 
+/* ---------------------------
+   Responsive styles
+--------------------------- */
+
 @media (prefers-reduced-motion: no-preference) {
   .quick-links a,
   .help-center a,
   .contact-info a,
   .social-media-links a {
     transition: color 0.3s ease;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-divider {
+    margin: 1.5rem auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-media-links a {
+    font-size: clamp(1.25rem, 4vw, 1.375rem);
+  }
+
+  .copyright {
+    font-size: clamp(0.875rem, 3.5vw, 1rem);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .footer-section {
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+@media (min-width: 901px) {
+  .footer-section {
+    padding: 2rem 2rem;
   }
 }

@@ -170,7 +170,92 @@ hr {
   }
 }
 
-/* Small screens (mobile, <=600px) */
+/* ---------------------------
+   Responsive styles
+--------------------------- */
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .pricing-section {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .pricing-content {
+    margin: 1.75rem auto;
+  }
+
+  .pricing-content header h2 {
+    font-size: clamp(1.75rem, 5vw, 2rem);
+  }
+
+  .pricing-content header p {
+    font-size: clamp(0.9375rem, 4vw, 1rem);
+    max-width: 80%;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    );
+    gap: 1.75rem;
+  }
+
+  .pricing-card {
+    padding: 1.5rem 1.75rem;
+  }
+
+  .pricing-card.standard-plan::before {
+    font-size: 0.75rem;
+    top: -11px;
+  }
+
+  .pricing-label h3 {
+    font-size: clamp(1.625rem, 4vw, 1.75rem);
+  }
+
+  .pricing-label p {
+    font-size: clamp(0.9375rem, 3.5vw, 1rem);
+  }
+
+  .price {
+    font-size: clamp(1.875rem, 5vw, 2rem);
+  }
+
+  .per-month {
+    font-size: clamp(0.9375rem, 3.5vw, 1rem);
+  }
+
+  .item-perk {
+    font-size: clamp(0.9375rem, 3.5vw, 1rem);
+  }
+}
+
+@media (min-width: 901px) {
+  .pricing-section {
+    padding: 2rem 2rem;
+  }
+
+  .pricing-content {
+    margin: 2rem auto;
+  }
+
+  .pricing-content header h2 {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+  }
+
+  .pricing-content header p {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 600px) {
   .pricing-section {
     padding: 1.5rem 1rem;

@@ -98,6 +98,10 @@
   height: 25px;
 }
 
+/* ---------------------------
+   Responsive styles
+--------------------------- */
+
 @media (prefers-reduced-motion: no-preference) {
   .review-text p {
     animation: fadeInUp 0.5s ease-out;
@@ -112,5 +116,126 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 0 0.5rem;
+  }
+
+  .review-card {
+    padding: 1.25rem;
+  }
+
+  .reviews-content header h2 {
+    font-size: clamp(1.5rem, 5vw, 1.75rem);
+  }
+
+  .reviews-content header p {
+    font-size: clamp(0.875rem, 4vw, 0.9375rem);
+    max-width: 90%;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .portrait-section {
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .name {
+    font-size: clamp(1rem, 4vw, 1.125rem);
+  }
+
+  .occupation {
+    font-size: clamp(0.875rem, 3.5vw, 0.9375rem);
+  }
+
+  .review-text p {
+    font-size: clamp(0.875rem, 3.5vw, 0.9375rem);
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+
+  .ratings img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .reviews-section {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+    gap: 1.5rem;
+  }
+
+  .review-card {
+    padding: 1.25rem;
+  }
+
+  .reviews-content header h2 {
+    font-size: clamp(1.75rem, 5vw, 2rem);
+  }
+
+  .reviews-content header p {
+    font-size: clamp(0.9375rem, 4vw, 1rem);
+    max-width: 80%;
+  }
+
+  .avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .occupation {
+    font-size: 1rem;
+  }
+
+  .review-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 901px) {
+  .reviews-section {
+    padding: 2rem 2rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(350px, 1fr)
+    );
+    gap: 2rem;
+  }
+
+  .reviews-content header h2 {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+  }
+
+  .reviews-content header p {
+    font-size: clamp(1rem, 2vw, 1.125rem);
   }
 }

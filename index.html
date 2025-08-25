@@ -7,39 +7,8 @@
       content="width=device-width, initial-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-
-    <link rel="stylesheet" href="styles/main.css" />
-    <!-- Responsive design -->
-    <link
-      rel="stylesheet"
-      href="styles/responsive/header.css"
-    />
-    <link
-      rel="stylesheet"
-      href="styles/responsive/hero.css"
-    />
-    <link
-      rel="stylesheet"
-      href="styles/responsive/features.css"
-    />
-    <link
-      rel="stylesheet"
-      href="styles/responsive/reviews.css"
-    />
-    <link
-      rel="stylesheet"
-      href="styles/responsive/marquees.css"
-    />
-    <link
-      rel="stylesheet"
-      href="styles/responsive/pricing.css"
-    />
-    <link
-      rel="stylesheet"
-      href="styles/responsive/footer.css"
-    />
-
     <!--====== Body CSS ======-->
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/features.css" />
@@ -61,45 +30,76 @@
   </head>
   <body>
     <!--===== Header =====-->
-    <header class="nav-header">
+    <header class="top-header">
       <nav>
-        <aside>
-          <ul class="sidebar">
-            <li><a href="">Home</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Reviews</a></li>
-            <li><a href="">Pricing</a></li>
-          </ul>
-        </aside>
+        <!-- Logo -->
+        <div class="logo">
+          <h1><span>Task</span>Flow.</h1>
+        </div>
 
-        <ul>
-          <li>
-            <h1>
-              <span class="logo-design-left">Task</span
-              ><span class="logo-design-right">Flow.</span>
-            </h1>
-          </li>
-          <li class="hideOnMobile"><a href="">Home</a></li>
-          <li class="hideOnMobile">
-            <a href="">Features</a>
-          </li>
-          <li class="hideOnMobile">
-            <a href="">Reviews</a>
-          </li>
-          <li class="hideOnMobile">
-            <a href="">Pricing</a>
-          </li>
-          <li class="hideOnScreens">
-            <a href=""
-              ><img
-                class="hamburger"
-                src="assets/icons/hamburger.svg"
-                alt=""
-            /></a>
-          </li>
+        <!-- Nav Links for Desktop -->
+        <ul id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Pricing</a></li>
         </ul>
+
+        <!-- Hamburger Menu for Mobile/Tablet -->
+        <button
+          class="hamburger-menu js-hamburger"
+          aria-label="Toggle menu"
+        >
+          <svg
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+          >
+            <path
+              class="hamburger-line line1"
+              d="M4 7h16"
+            />
+            <path
+              class="hamburger-line line2"
+              d="M4 12h16"
+            />
+            <path
+              class="hamburger-line line3"
+              d="M4 17h16"
+            />
+          </svg>
+        </button>
       </nav>
     </header>
+
+    <!-- Sidebar for Mobile/Tablet -->
+    <aside id="sidebar">
+      <div>
+        <button id="close-sidebar" aria-label="Close menu">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+          >
+            <path d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </aside>
     <!--===== Main content =====-->
     <main>
       <!--====== Hero ======-->
