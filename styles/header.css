@@ -93,6 +93,21 @@ nav {
   gap: 1rem;
   padding: 1rem;
 }
+#sidebar li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#sidebar li:hover i {
+  color: var(--theme-green);
+}
+
+#sidebar li i {
+  font-size: 20px;
+  color: #6c6c6c;
+  transition: color 0.3s ease;
+}
 
 #sidebar a {
   text-decoration: none;
