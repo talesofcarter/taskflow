@@ -5,14 +5,15 @@ TaskFlow is a modern, responsive one-page web application designed to help indiv
 ## Tables of Content
 
 **Features**
-**Prerequisites**
-**Installation**
-**Usage**
-**Responsive Design**
-**Accessibility**
-**Contributing**
-**License**
-**Contact**
+
+- Prerequisites
+- Installation
+- Usage
+- Responsive Design
+- Accessibility
+- Contributing
+- License
+- Contact
 
 ## Features
 
