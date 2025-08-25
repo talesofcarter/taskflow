@@ -33,29 +33,13 @@
 }
 
 .review-card:nth-child(4) {
-  transition-delay: 1.8s;
+  transition-delay: 0.3s;
 }
 
 .review-card:nth-child(5) {
-  transition-delay: 2.3s;
-}
-
-.review-card:nth-child(6) {
-  transition-delay: 2.8s;
-}
-
-.feature-card:nth-child(1) {
   transition-delay: 0.8s;
 }
 
-.feature-card:nth-child(2) {
+.review-card:nth-child(6) {
   transition-delay: 1.3s;
-}
-
-.feature-card:nth-child(3) {
-  transition-delay: 1.8s;
-}
-
-.feature-card:nth-child(4) {
-  transition-delay: 2.3s;
 }
