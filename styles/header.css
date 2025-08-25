@@ -49,6 +49,7 @@ nav {
 
 .hamburger-menu {
   display: block;
+
   background: none;
   border: none;
   cursor: pointer;
@@ -93,6 +94,7 @@ nav {
   gap: 1rem;
   padding: 1rem;
 }
+
 #sidebar li {
   display: flex;
   gap: 10px;

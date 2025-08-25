@@ -16,6 +16,7 @@
   width: 100%;
   gap: 2rem;
   flex-wrap: wrap;
+  margin-top: 5rem;
 }
 
 .hero-text {
@@ -149,6 +150,7 @@
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+    margin-top: 9rem;
   }
 
   .hero-text {
@@ -197,10 +199,11 @@
     flex-direction: column;
     text-align: center;
     gap: 1.75rem;
+    margin-top: 12rem;
   }
 
   .hero-text h1 {
-    font-size: clamp(2rem, 6vw, 2.5rem);
+    font-size: clamp(1.5rem, 6vw, 2rem);
   }
 
   .hero-text p {
