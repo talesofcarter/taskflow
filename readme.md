@@ -73,7 +73,7 @@ TaskFlow is designed to be fully responsive:
 
 TaskFlow incorporates accessibility best practices:
 
-1. Semantic HTML5 with <header>, <nav>, <section>, and <footer> tags.
+1. Semantic HTML5 with `<header>`, `<nav>`, `<section>`, and `<footer>` tags.
 
 2. ARIA attributes (aria-label, aria-labelledby, role) for screen reader support.
 
