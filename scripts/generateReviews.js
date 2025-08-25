@@ -16,7 +16,7 @@ export function generateReviews() {
       )
       .join("");
     reviewRender += `
-      <div class="review-card" role="listitem">
+      <div class="review-card js-review-card" role="listitem">
         <div class="portrait-section">
           <img
             class="avatar"

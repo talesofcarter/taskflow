@@ -2,6 +2,7 @@ import { generateFeatures } from "./generateFeatures.js";
 import { generateReviews } from "./generateReviews.js";
 import { generateMarquees } from "./generateMarquees.js";
 import { generatePricing } from "./generatePricing.js";
+import { animateOnScroll } from "./animateOnScroll.js";
 
 const hamburger = document.querySelector(".js-hamburger");
 const sidebar = document.querySelector("#sidebar");
@@ -23,4 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
   generateReviews();
   generatePricing();
   generateMarquees();
+  animateOnScroll(".js-review-card", { threshold: 0.1 });
 });
