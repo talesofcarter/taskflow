@@ -1,5 +1,5 @@
 export function animateOnScroll(
-  selector = ".js-review-card",
+  selector = "",
   options = {}
 ) {
   const elements = document.querySelectorAll(selector);

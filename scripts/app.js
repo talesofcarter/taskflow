@@ -25,4 +25,5 @@ document.addEventListener("DOMContentLoaded", () => {
   generatePricing();
   generateMarquees();
   animateOnScroll(".js-review-card", { threshold: 0.1 });
+  animateOnScroll(".js-feature-card", { threshold: 0.1 });
 });
