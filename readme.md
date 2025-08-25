@@ -42,8 +42,7 @@ To run TaskFlow locally, ensure you have the following:
 
 ```html
 <script
-  src="https://kit.fontawesome.com/your-kit-id.js"
-  crossorigin="anonymous"
+  src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"
 ></script>
 ```
 
