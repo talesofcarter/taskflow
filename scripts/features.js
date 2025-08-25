@@ -23,4 +23,16 @@ export const features = [
     description:
       "Visualize your productivity with detailed analytics and insights into your task management.",
   },
+  {
+    icon: "assets/icons/puzzle.svg",
+    title: "Integration",
+    description:
+      "Syncs with calendars, email, or other productivity apps to streamline workflows and centralize information.",
+  },
+  {
+    icon: "assets/icons/cloud.svg",
+    title: "Cloud Storage",
+    description:
+      "Securely stores your files and data, ensuring seamless access, collaboration, and organization across devices.",
+  },
 ];

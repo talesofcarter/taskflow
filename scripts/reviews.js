@@ -31,4 +31,20 @@ export const reviews = [
     portrait: "assets/images/portraits/david.jpeg",
     star: "assets/icons/star.svg",
   },
+  {
+    person: "Charles Omondi",
+    title: "Software Engineer",
+    feedback:
+      "As a frontend developer, this task management app has been a game-changer—its cloud storage keeps my project files organized and accessible, while the intuitive task templates and collaboration tools streamline my workflow, helping me deliver projects faster and more efficiently!",
+    portrait: "assets/images/portraits/charles.jpeg",
+    star: "assets/icons/star.svg",
+  },
+  {
+    person: "Martha R.",
+    title: "Nursing Caregiver",
+    feedback:
+      "As a busy caregiver, this task management app has transformed how I juggle my responsibilities—its cloud storage keeps all my schedules and patient notes in one place, and the easy-to-use templates help me stay organized, giving me more time to focus on providing quality care.",
+    portrait: "assets/images/portraits/martha.jpeg",
+    star: "assets/icons/star.svg",
+  },
 ];
